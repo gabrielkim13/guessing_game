@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "rust: remote ARMv7 debug setup",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/remote_debug.sh",
+      "args": ["${workspaceFolder}", "192.168.15.66", "2345"],
+      "group": "none",
+      "dependsOn": ["rust: cargo build ARMv7"],
+    },
+    {
+      "label": "rust: cargo build ARMv7",
+      "command": "make",
+      "args": ["all"],
+      "problemMatcher": ["$rustc"],
+      "group": "build",
+    },
+    {
+      "type": "cargo",
+      "command": "build",
+      "problemMatcher": ["$rustc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "rust: cargo build"
+    }
+  ]
+}

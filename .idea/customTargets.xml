@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="ab8d5e40-18da-4eef-b8b4-1171faf119b8" name="Makefile" defaultType="TOOL">
+      <configuration id="8b1434fa-eb1a-4b62-98d6-7570ee33e302" name="Makefile" toolchainName="WSL">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_all" />
+        </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_clean" />
+        </clean>
+      </configuration>
+    </target>
+  </component>
+</project>
